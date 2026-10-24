@@ -1,0 +1,26 @@
+{
+  "name": "jsaqa-task6",
+  "version": "1.0.0",
+  "description": "Sixth task for the Web UI test automation course",
+  "homepage": "https://github.com/k-o-white/jsaqa-task6#readme",
+  "bugs": {
+    "url": "https://github.com/k-o-white/jsaqa-task6/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/k-o-white/jsaqa-task6.git"
+  },
+  "license": "ISC",
+  "author": "Kirill Burilichev",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "desktop:headed": "cypress run -b chrome cypress.config.js",
+    "desktop:headless": "cypress run -b chrome --headless cypress.config.js",
+    "phone:headed": "cypress run -b chrome cypress.mobile.config.js",
+    "phone:headless": "cypress run -b chrome --headless cypress.mobile.config.js"
+  },
+  "devDependencies": {
+    "cypress": "^16.2.0"
+  }
+}
