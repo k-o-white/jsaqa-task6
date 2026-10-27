@@ -7,7 +7,7 @@ describe("Login test suit", () => {
 
   it("Should succesfully login", () => {
     cy.login(email, password);
-    cy.contains("Добро пожаловать ${email}").should("be.visible");
+    cy.contains(`Добро пожаловать ${email}`).should("be.visible");
   });
 
   it("Should not login with empty login", () => {
